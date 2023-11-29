@@ -20,7 +20,21 @@ header {
     justify-content: space-between;
     align-items: center;
     transition: all ease 0.5s;
-    
+}
+
+header img{
+    width: 500px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    scale: 0.5;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+header img:hover{
+    scale: 1;
+    opacity: 1;
 }
 
 header h1 {
@@ -31,6 +45,7 @@ header h1 {
 
 header:hover {
     background-color: #212121;
+  
 }
 
 nav {
@@ -39,15 +54,20 @@ nav {
 }
 
 nav a {
-    margin-right: 15px;
+    /* margin-right: 15px; */
     text-decoration: none;
     color: #ffffff;
-    transition: color 0.3s;
+    transition: all ease 0.3s;
+    scale: 0.5;
+    opacity: 0.5;
 }
 
 nav a:hover {
     color: #00ff00;
     text-decoration: dashed;
+    scale: 1;
+    opacity: 1;
+    margin: 15px;
 }
 
 .container {
@@ -74,5 +94,5 @@ nav a:hover {
 
 .current{
     color: green;
-    cursor: crosshair;
+    cursor: pointer;
 }
